@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>Design college Lesson 1</title>
+        <link href="./design_1.css" rel="stylesheet" type="text/css"/>
+    </head>
+    <body>
+        <div class="container">
+        <div class="trans_nav">
+            前端学院
+            <div class="bottom_line"></div>
+        </div>
+        <button id="toggle_style">切换样式</button>
+        </div>
+    </body>
+    <script>
+        (function(){
+            document.getElementById("toggle_style").addEventListener("click",function(){
+                document.getElementsByClassName('trans_nav')[0].classList.toggle("toggle_nav")
+            })
+        })()
+    </script>
+</html>
