@@ -1,0 +1,30 @@
+.bottom_line{
+ height: 3px;
+ width: 0;
+ margin: 10px auto;
+ background: transparent;
+transition:all 1s cubic-bezier(0.19, 1, 0.22, 1);
+}
+.trans_nav{
+    transition:all 1s cubic-bezier(0.19, 1, 0.22, 1);
+    font-size:38px;
+}
+.toggle_nav{
+    color:#4a7cea;
+}
+.toggle_nav .bottom_line{
+    background: #4a7cea;
+    width: 100%;
+}
+
+.container{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+#toggle_style{
+    margin:20px;
+    width: 200px;
+    height: 50px;
+}
