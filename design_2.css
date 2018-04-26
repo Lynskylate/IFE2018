@@ -1,0 +1,31 @@
+.box{
+    width:56px;
+    height: 56px;
+    background: #dddddd;
+    border: 2px solid #bbbbbb;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.box4{
+    transform: translate(10px, 20px);
+}
+
+.box3{
+    transform: rotate(45deg);
+}
+
+.box2{
+    transform: scaleX(0.5)
+}
+
+.box1{
+    transform: skewX(30deg);
+}
+
+.container{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
