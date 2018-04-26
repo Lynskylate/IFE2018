@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta http-equiv="content-type" content="text/html;charset=utf-8">
+    <title>卡片动画</title>
+    <style>
+        .container {
+            display: flex;
+            align-items: center;
+            justify-content: center
+        }
+
+        .card {
+            position: relative
+        }
+
+        .back-display,
+        .front-display {
+            backface-visibility: hidden;
+            transition: all 1s
+        }
+
+        .card:hover .front-display {
+            transform: rotateY(1turn)
+        }
+
+        .card:hover .back-display {
+            transform: rotateY(180deg)
+        }
+
+        .front-display {
+            transform: rotateY(180deg)
+        }
+
+        .back-display {
+            position: absolute;
+            left: 0;
+            top: 0;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <div class="card">
+            <img class="front-display" src="./assets/front.jpg">
+            <img class="back-display" src="./assets/back.jpg"> </div>
+    </div>
+</body>
+
+</html>
